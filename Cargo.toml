@@ -20,9 +20,17 @@ include = [
 ]
 
 [dependencies]
-nom = "4.0"
-rusticata-macros = "1.0"
-der-parser = "1.0"
+nom = "^3.0"
+# rusticata-macros = "1.0"
+# der-parser = "1.0"
+
+[dependencies.der-parser]
+# path = "../der-parser"
+git = "https://github.com/copslock/der-parser.git"
+
+[dependencies.rusticata-macros]
+# path = "../rusticata-macros"
+git = "https://github.com/copslock/rusticata-macros.git"
 
 [badges]
 travis-ci = { repository = "rusticata/kerberos-parser" }
